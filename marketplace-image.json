@@ -1,7 +1,7 @@
 {
   "variables": {
     "token": "{{env `DIGITALOCEAN_TOKEN`}}",
-    "csmm_version": "v1.19.4"
+    "csmm_version": "latest"
   },
   "builders": [
     {
