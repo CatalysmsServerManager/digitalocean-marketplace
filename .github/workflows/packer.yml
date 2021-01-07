@@ -30,10 +30,3 @@ jobs:
           target: marketplace-image.json
         env:
           DIGITALOCEAN_TOKEN: ${{ secrets.DIGITALOCEAN_TOKEN }}
-
-      - name: Install doctl
-        uses: digitalocean/action-doctl@v2
-        with:
-          token: ${{ secrets.DIGITALOCEAN_TOKEN }}
-      - name: Deploy built image to DO
-        run: doctl /deploy-the-image/
